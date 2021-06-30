@@ -1,0 +1,31 @@
+{
+  "name": "fashion",
+  "version": "0.0.1",
+  "description": "Fashion Web Site",
+  "keywords": [
+    "fashion",
+    "Moda"
+  ],
+  "license": "",
+  "author": "proposiivapr@dail",
+  "scripts": {
+    "build": "parcel build ./src/index.html -d dist/",
+    "dev": "parcel ./src/index.html --open",
+    "start": "npm run build && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.35.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "b": "^2.0.1",
+    "bootstrap": "^5.0.2",
+    "p": "^0.2.0",
+    "ph": "^0.1.10",
+    "pho": "^0.1.1",
+    "photoswipe": "^4.1.3",
+    "underscore": "^1.13.1"
+  }
+}

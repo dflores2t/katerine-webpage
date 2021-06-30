@@ -1,0 +1,114 @@
+$ColorFondo: #080707;
+$ColorMenu: #fefefe;
+$SeparadorSearch: #f1aba9;
+$ColorLogo: #ff0e8d;
+.container-fluid {
+  background-color: $ColorFondo;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;  
+  main {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    .control {
+      display: flex;
+      align-items: center;
+
+      .siguiente {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .fa-caret-right {
+          margin-left: 10px;
+        }
+      }
+      .anterior {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .fa-caret-left {
+          margin-right: 10px;
+        }
+      }
+      button[type="button"] {
+        background-color: $ColorLogo;
+        box-shadow: none;
+        border: none;
+        font-size: 1.4rem;
+        min-width: 70%;
+      }
+      i {
+        font-size: 2rem;
+        color: $ColorMenu;
+      }
+    }
+    .card {
+      background-color: transparent;
+      margin: 5px;
+    }
+    .card-title {
+      text-align: center;
+      font-family: "Parisienne", cursive;
+      font-size: 3rem;
+      font-weight: 500;
+      color: $ColorMenu;
+    }
+  }
+
+  footer {
+    color: $ColorMenu;
+    .redesSociales {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      list-style: none;
+      margin-right: 4rem;
+      li i {
+        color: $ColorMenu;
+        font-size: 1.5rem;
+        background: $ColorLogo;
+        margin-left: 1.3rem;
+        padding: 0.4rem;
+        border-radius: 50%;
+      }
+    }
+    .dot ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      li {
+        margin-left: 1rem;
+      }
+      i {
+        font-size: 1.2rem;
+      }
+      .activo {
+        border-radius: 50%;
+        border: 2px solid $ColorLogo;
+        padding: 6px;
+        color: $ColorLogo;
+      }
+    }
+    #line {
+      border-left: 4px solid white;
+      border-top: 4px solid white;
+    }
+  }
+}
+
+// media queries
+// @media (min-width: 1012px) {
+//   header {
+//      nav .test {
+//     //   background-color: red;
+//     //  height: 300px;
+//     }
+//     nav .test1 {
+//      // background-color: blue;
+//     }
+//   }
+// }

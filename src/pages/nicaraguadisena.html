@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nicaragua Diseña</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="../site.webmanifest" />
+    <link rel="apple-touch-icon" href="../icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+   
+      <!-- tipoglafia google -->
+      <link rel="preconnect" href="https://fonts.gstatic.com"/>
+      <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"/>
+      <link rel="stylesheet" href="../scss/stylepr.scss" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css">
+     
+      <link rel="stylesheet" href="../scss/gallery.scss">
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!-- Add your site or application content here -->
+
+    <div class="container-fluid">
+      <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <a href="#" class="navbar-brand">
+            <canvas id="canvas" width="150" height="120"></canvas>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span><i class="fas fa-bars"></i>
+        </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pasarela
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./nicaraguadisena.html">Nicaragua Diseña</a></li>
+                 </ul>
+             </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Colecciones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./summerTime.html">Summer Time</a></li>
+                 </ul>
+             </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </div>
+            <form class="d-flex d-none d-lg-block">
+              <div class="input-group mb-3">                
+                <input class="form-control me-2" type="search" placeholder="Busca aqui..." aria-label="Search">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+              </div>  
+            </form>            
+        </nav>     
+      </header>
+      <!-- CABECERA DE GALERIA -->
+      <div class="container">
+            <div class="row my-gallery d-flex justify-content-between">              
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643402/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0187_owtlma.jpg"
+                itemprop="contentUrl" data-size="845x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643402/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0187_owtlma.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 1
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643401/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0184_hdsq1o.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,w_200,g_face/v1623643401/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0184_hdsq1o.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 2
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643401/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0185_ypeemq.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643401/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0185_ypeemq.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 3
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643401/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0186_xkzrfp.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_center,h_286,w_200/v1623643401/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0186_xkzrfp.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 4
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643399/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0171_eyprhw.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_center,h_286,w_200/v1623643399/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0171_eyprhw.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 5
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643398/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0168_ttgv1w.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643398/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0168_ttgv1w.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 6
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643397/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0170_wx8awh.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643397/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0170_wx8awh.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 7
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643397/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0183_pb4unq.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643397/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0183_pb4unq.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 8
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643395/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0182_ugk9rs.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643395/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0182_ugk9rs.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 9
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643395/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0181_vgxhe1.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643395/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0181_vgxhe1.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 10
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643393/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0169_qygvne.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643393/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0169_qygvne.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 11
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643392/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0165_tcxqy7.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643392/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0165_tcxqy7.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 12
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643392/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0163_nqfz47.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643392/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0163_nqfz47.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 13
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643392/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0167_im8acb.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643392/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0167_im8acb.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 14
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643388/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0166_fpp965.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_center,h_286,w_200/v1623643388/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0166_fpp965.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 15
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643388/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0162_hzc12n.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_center,h_286,w_200/v1623643388/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0162_hzc12n.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 16
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643388/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0164_r6w8iw.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643388/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0164_r6w8iw.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 17
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643387/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0180_ucfddc.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643387/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0180_ucfddc.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 18
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643386/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0160_da8pua.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_center,h_286,w_200/v1623643386/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0160_da8pua.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 19
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643386/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0179_mcrbjt.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643386/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0179_mcrbjt.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 20
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643386/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0178_ktggxe.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643386/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0178_ktggxe.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 21
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643383/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0161_na6l6i.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643383/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0161_na6l6i.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 22
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643382/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0177_pr5jfe.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_center,h_286,w_200/v1623643382/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0177_pr5jfe.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 23
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643382/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0156_dbkmn6.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_center,h_286,w_200/v1623643382/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0156_dbkmn6.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 24
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643382/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0158_xd4bxz.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643382/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0158_xd4bxz.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 25
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643381/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0157_lztnwf.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643381/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0157_lztnwf.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 26
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643379/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0153_pqtwlk.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643379/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0153_pqtwlk.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 27
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643375/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0175_jgzwmh.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643375/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0175_jgzwmh.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 28
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643375/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0176_ftzxj2.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643375/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0176_ftzxj2.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 29
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643375/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0174_ge5kuh.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643375/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0174_ge5kuh.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 30
+              </figcaption> -->
+            </figure> 
+            
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643375/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0159_vkhkk7.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643375/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0159_vkhkk7.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 31
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643373/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0173_ivmlxf.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643373/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0173_ivmlxf.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 32
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643369/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0155_rtda1x.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_faces:center,h_286,w_200/v1623643369/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0155_rtda1x.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 33
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643369/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0152_u7fw0i.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643369/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0152_u7fw0i.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 34
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643369/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0172_mdy0id.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_center,h_286,w_200/v1623643369/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0172_mdy0id.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 35
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643368/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0154_k7xt5d.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_center,h_286,w_200/v1623643368/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0154_k7xt5d.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 36
+              </figcaption> -->
+            </figure> 
+            <figure class="col-xl-2  col-md-4 col-sm-6 mb-4 mb-lg-0" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://res.cloudinary.com/dchpzxwnx/image/upload/v1623643365/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0150_zccmgo.jpg"
+                itemprop="contentUrl" data-size="896x1280">
+                <img src="https://res.cloudinary.com/dchpzxwnx/image/upload/c_thumb,g_face,h_286,w_200/v1623643365/Pasarela_Nicaragua_Dise%C3%B1a_Resort/IMG-20210428-WA0150_zccmgo.jpg"
+                  itemprop="thumbnail" alt="Image description"/>
+              </a>
+              <!-- <figcaption itemprop="caption description">
+                Image caption 37
+              </figcaption> -->
+            </figure> 
+            
+           
+            
+            
+      </div>
+     
+         
+ 
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe.
+            It's a separate element, as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+            <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Cerrar (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Compartir"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Pantalla Completa"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                          <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Anterior (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Siguiente (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+              </div>
+
+            </div>
+
+    </div>
+      
+    <footer>
+        <ul class="redesSociales">
+          <li><a href="http://"><i class="fab fa-whatsapp"></i></a></li>
+          <li><a href="http://"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="http://"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="http://"><i class="fab fa-twitter"></></a></li>
+          <li><a href="http://"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+        <div class="row">
+          <div class="col-md"></div>
+          <div class="col-md dot">
+            <ul>
+              <li><canvas id="lineFooter" width="200" height="40"></canvas></li>
+              <li class="activo"><i class="fas fa-circle"></i></li>
+              <li><i class="fas fa-circle"></i></li>
+              <li><i class="fas fa-circle"></i></li>
+              <li><i class="fas fa-circle"></i></li>
+            </ul>
+          </div>
+          <div class="col-md" id="line"><canvas id="lineBotton" width="350" height="35"></canvas></div>
+        </div>
+    </footer>
+    </div>
+    <!-- end container-fluid -->
+      <!-- core js  -->
+      <script src="../js/main.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js"></script>
+
+    <script>
+var initPhotoSwipeFromDOM = function (gallerySelector) {
+  // parse slide data (url, title, size ...) from DOM elements
+  // (children of gallerySelector)
+  var parseThumbnailElements = function (el) {
+    var thumbElements = el.childNodes,
+      numNodes = thumbElements.length,
+      items = [],
+      figureEl,
+      linkEl,
+      size,
+      item;
+
+    for (var i = 0; i < numNodes; i++) {
+      figureEl = thumbElements[i]; // <figure> element
+
+      // include only element nodes
+      if (figureEl.nodeType !== 1) {
+        continue;
+      }
+
+      linkEl = figureEl.children[0]; // <a> element
+
+      size = linkEl.getAttribute("data-size").split("x");
+
+      // create slide object
+      item = {
+        src: linkEl.getAttribute("href"),
+        w: parseInt(size[0], 10),
+        h: parseInt(size[1], 10),
+      };
+
+      if (figureEl.children.length > 1) {
+        // <figcaption> content
+        item.title = figureEl.children[1].innerHTML;
+      }
+
+      if (linkEl.children.length > 0) {
+        // <img> thumbnail element, retrieving thumbnail url
+        item.msrc = linkEl.children[0].getAttribute("src");
+      }
+
+      item.el = figureEl; // save link to element for getThumbBoundsFn
+      items.push(item);
+    }
+
+    return items;
+  };
+
+  // find nearest parent element
+  var closest = function closest(el, fn) {
+    return el && (fn(el) ? el : closest(el.parentNode, fn));
+  };
+
+  // triggers when user clicks on thumbnail
+  var onThumbnailsClick = function (e) {
+    e = e || window.event;
+    e.preventDefault ? e.preventDefault() : (e.returnValue = false);
+
+    var eTarget = e.target || e.srcElement;
+
+    // find root element of slide
+    var clickedListItem = closest(eTarget, function (el) {
+      return el.tagName && el.tagName.toUpperCase() === "FIGURE";
+    });
+
+    if (!clickedListItem) {
+      return;
+    }
+
+    // find index of clicked item by looping through all child nodes
+    // alternatively, you may define index via data- attribute
+    var clickedGallery = clickedListItem.parentNode,
+      childNodes = clickedListItem.parentNode.childNodes,
+      numChildNodes = childNodes.length,
+      nodeIndex = 0,
+      index;
+
+    for (var i = 0; i < numChildNodes; i++) {
+      if (childNodes[i].nodeType !== 1) {
+        continue;
+      }
+
+      if (childNodes[i] === clickedListItem) {
+        index = nodeIndex;
+        break;
+      }
+      nodeIndex++;
+    }
+
+    if (index >= 0) {
+      // open PhotoSwipe if valid index found
+      openPhotoSwipe(index, clickedGallery);
+    }
+    return false;
+  };
+
+  // parse picture index and gallery index from URL (#&pid=1&gid=2)
+  var photoswipeParseHash = function () {
+    var hash = window.location.hash.substring(1),
+      params = {};
+
+    if (hash.length < 5) {
+      return params;
+    }
+
+    var vars = hash.split("&");
+    for (var i = 0; i < vars.length; i++) {
+      if (!vars[i]) {
+        continue;
+      }
+      var pair = vars[i].split("=");
+      if (pair.length < 2) {
+        continue;
+      }
+      params[pair[0]] = pair[1];
+    }
+
+    if (params.gid) {
+      params.gid = parseInt(params.gid, 10);
+    }
+
+    return params;
+  };
+
+  var openPhotoSwipe = function (
+    index,
+    galleryElement,
+    disableAnimation,
+    fromURL
+  ) {
+    var pswpElement = document.querySelectorAll(".pswp")[0],
+      gallery,
+      options,
+      items;
+
+    items = parseThumbnailElements(galleryElement);
+
+    // define options (if needed)
+    options = {
+      // define gallery index (for URL)
+      galleryUID: galleryElement.getAttribute("data-pswp-uid"),
+
+      getThumbBoundsFn: function (index) {
+        // See Options -> getThumbBoundsFn section of documentation for more info
+        var thumbnail = items[index].el.getElementsByTagName("img")[0], // find thumbnail
+          pageYScroll =
+            window.pageYOffset || document.documentElement.scrollTop,
+          rect = thumbnail.getBoundingClientRect();
+
+        return { x: rect.left, y: rect.top + pageYScroll, w: rect.width };
+      },
+    };
+
+    // PhotoSwipe opened from URL
+    if (fromURL) {
+      if (options.galleryPIDs) {
+        // parse real index when custom PIDs are used
+        // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+        for (var j = 0; j < items.length; j++) {
+          if (items[j].pid == index) {
+            options.index = j;
+            break;
+          }
+        }
+      } else {
+        // in URL indexes start from 1
+        options.index = parseInt(index, 10) - 1;
+      }
+    } else {
+      options.index = parseInt(index, 10);
+    }
+
+    // exit if index not found
+    if (isNaN(options.index)) {
+      return;
+    }
+
+    if (disableAnimation) {
+      options.showAnimationDuration = 0;
+    }
+
+    // Pass data to PhotoSwipe and initialize it
+    gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+    gallery.init();
+  };
+
+  // loop through all gallery elements and bind events
+  var galleryElements = document.querySelectorAll(gallerySelector);
+
+  for (var i = 0, l = galleryElements.length; i < l; i++) {
+    galleryElements[i].setAttribute("data-pswp-uid", i + 1);
+    galleryElements[i].onclick = onThumbnailsClick;
+  }
+
+  // Parse URL and open gallery if it contains #&pid=3&gid=1
+  var hashData = photoswipeParseHash();
+  if (hashData.pid && hashData.gid) {
+    openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+  }
+};
+    initPhotoSwipeFromDOM(".my-gallery");
+    </script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
+</html>
