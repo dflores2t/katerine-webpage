@@ -1,9 +1,9 @@
 import "../js/vendor/modernizr-3.11.2.min.js";
 import "../js/plugins";
-import 'bootstrap/dist/js/bootstrap.bundle'
+import photo from "./modules/obtainPhotos.js";
+import "bootstrap/dist/js/bootstrap.bundle";
 import "photoswipe/dist/photoswipe";
 import "photoswipe/dist/photoswipe-ui-default";
-
 
 import * as urlImage from "../img/front/llogo.svg";
 
@@ -44,3 +44,23 @@ function drawImage() {
     line.fillText("CopyRight@ Propositivapr 2021", 70, 30);
   }
 }
+
+// Section that obtain a list of photos from cloudinary cloud
+const title = document.title;
+switch (title) {
+  case "Arte & Moda León":
+    photo("arteYmodaLeon");
+    break;
+  case "Nicaragua Diseña":
+    photo('ndesings');
+    break;
+  case "Coleccion Summer Time":
+    photo("summerTime");
+    break;
+  case 'Arte, Moda, Diseño y Muralismo':
+    photo("esteli");
+    break;
+  default:
+    break;
+}
+
