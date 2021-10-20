@@ -1,1 +1,0 @@
-{"version":3,"sources":["scss/gallery.scss"],"names":[],"mappings":"AACA,WACE,eAGF,aACE,UAAA,CACA,WAAA,CACA","file":"gallery.a6a926ed.css","sourceRoot":"../src","sourcesContent":["\n.container {\n  margin-top: 15%;\n}\n\nfigure a img {\n  width: 100%;\n  height: auto;\n  padding-bottom: 15px;\n}\n"]}
