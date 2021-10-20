@@ -6,7 +6,7 @@ $ColorLogo: #ff0e8d;
   background-color: $ColorFondo;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;  
+  justify-content: space-around;
   main {
     margin-top: 10%;
     display: flex;
@@ -55,6 +55,17 @@ $ColorLogo: #ff0e8d;
       font-size: 3rem;
       font-weight: 500;
       color: $ColorMenu;
+    }
+  }
+  .us-page {
+    color: $ColorMenu;
+    text-align: justify;
+    span {
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    .subtitle {
+      color: $ColorLogo;
     }
   }
 
