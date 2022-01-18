@@ -110,6 +110,21 @@ $ColorLogo: #ff0e8d;
     }
   }
 }
+.modal-content {
+  color: $ColorMenu;
+  border: 1px solid $SeparadorSearch;
+}
+.modal-header,
+.modal-footer {
+  background-color: $ColorLogo;
+}
+.modal-body {
+  background-color: $ColorFondo;
+}
+.modal-content .btn-primary {
+  background-color: $ColorFondo;
+  border: 1px solid $SeparadorSearch;
+}
 
 // media queries
 // @media (min-width: 1012px) {

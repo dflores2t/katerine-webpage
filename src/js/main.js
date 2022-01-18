@@ -46,21 +46,19 @@ function drawImage() {
 }
 
 // Section that obtain a list of photos from cloudinary cloud
+//menu
 const title = document.title;
-switch (title) {
-  case "Arte & Moda León":
-    photo("arteYmodaLeon");
-    break;
-  case "Nicaragua Diseña":
-    photo('ndesings');
-    break;
-  case "Coleccion Summer Time":
-    photo("summerTime");
-    break;
-  case 'Arte, Moda, Diseño y Muralismo':
-    photo("esteli");
-    break;
-  default:
-    break;
+const menu = {
+  "Arte & Moda León": "arteYmodaLeon",
+  "Nicaragua Diseña Edición SJS": "ndesings",
+  "Edición 2021": "n2021",
+  "Edición 2022": "n2022",
+  "Edición Granada": "ngranada",
+  "Coleccion Summer Time": "summerTime",
+  "Coleccion Metamorfosis": "Metamorfosis",
+  "Arte, Moda, Diseño y Muralismo": "esteli",
+  "Miss Teens Nicaragua": "mteens2021",
+};
+if (menu[title]) {
+  photo(menu[title]);
 }
-
