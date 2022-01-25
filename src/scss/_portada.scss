@@ -1,5 +1,5 @@
-$ColorFondo: #080707;
-$ColorMenu: #fefefe;
+$ColorFondo: #f1f1f1f1; //080707;
+$ColorMenu: #000000;
 $SeparadorSearch: #f1aba9;
 $ColorLogo: #ff0e8d;
 .container-fluid {
@@ -7,6 +7,11 @@ $ColorLogo: #ff0e8d;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  header img {
+    width: 290px;
+    height: 130px;
+  }
+
   main {
     margin-top: 10%;
     display: flex;
@@ -45,16 +50,29 @@ $ColorLogo: #ff0e8d;
         color: $ColorMenu;
       }
     }
+    .card-img-top.prt {
+      width: 60%;
+      height: auto;
+    }
     .card {
       background-color: transparent;
       margin: 5px;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .card-title {
       text-align: center;
-      font-family: "Parisienne", cursive;
-      font-size: 3rem;
+      font-size: 1.9rem;
       font-weight: 500;
       color: $ColorMenu;
+      font-weight: bold;
+    }
+    .card-img-top {
+      height: 293px;
+      width: 332px;
+      border-radius: 10px;
     }
   }
   .us-page {
@@ -66,6 +84,11 @@ $ColorLogo: #ff0e8d;
     }
     .subtitle {
       color: $ColorLogo;
+    }
+  }
+  .container {
+    h3.display-6 {
+      color: #ff0e8d;
     }
   }
 
@@ -105,28 +128,52 @@ $ColorLogo: #ff0e8d;
       }
     }
     #line {
-      border-left: 4px solid white;
-      border-top: 4px solid white;
+      border-left: 4px solid $ColorMenu;
+      border-top: 4px solid $ColorMenu;
     }
   }
 }
 .modal-content {
   color: $ColorMenu;
   border: 1px solid $SeparadorSearch;
-}
-.modal-header,
-.modal-footer {
-  background-color: $ColorLogo;
-}
-.modal-body {
-  background-color: $ColorFondo;
-}
-.modal-content .btn-primary {
-  background-color: $ColorFondo;
-  border: 1px solid $SeparadorSearch;
+  .modal-header,
+  .modal-footer {
+    background-color: $ColorLogo;
+  }
+  .modal-body {
+    background-color: $ColorFondo;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        border-radius: 15px;
+        height: 100%;
+        width: 100%;
+      }
+    .btn-primary {
+      background-color: $ColorFondo;
+      border: 1px solid $SeparadorSearch;
+    }
+  }
 }
 
 // media queries
+@media (max-width: 576px) {
+  .container-fluid main .card-img-top.prt {
+    height: 293px;
+    width: 332px;
+  }
+  .container-fluid header img {
+    width: 180px;
+    height: auto;
+  }
+}
+@media (max-width: 992px) {
+  .card-group.tst {
+    display: flex;
+    flex-direction: column;
+  }
+}
 // @media (min-width: 1012px) {
 //   header {
 //      nav .test {
